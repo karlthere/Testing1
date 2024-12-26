@@ -1,0 +1,80 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/picUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add New Menu"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textColor="#720036" />
+
+        <EditText
+            android:id="@+id/inputUpdateTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Menu Title"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/inputUpdateDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/inputUpdateFee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fee"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:padding="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerUpdateCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/category_array"
+            android:spinnerMode="dropdown"
+            android:minHeight="48dp"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/buttonAddPic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Picture" />
+
+        <Switch
+            android:id="@+id/switchUpdateAvailable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Available"
+            android:minHeight="48dp"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Menu" />
+
+    </LinearLayout>
+</ScrollView>

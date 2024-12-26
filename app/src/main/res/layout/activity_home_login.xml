@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp" android:gravity="center">
+
+    <!--  Logo  -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/img"
+        android:contentDescription="Logo"
+        android:layout_marginBottom="16dp"/>
+
+    <!--  Text Title  -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ATLANTIS CAFE"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="8dp"/>
+
+    <!--  Subtitle  -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A Taste of Serenity"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif"
+        android:layout_marginBottom="32dp"/>
+
+    <!--  Login Button  -->
+    <Button
+        android:id="@+id/loginActionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/dark_red"
+        android:text="MASUK"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp"/>
+
+    <!--  Register Button  -->
+    <Button
+        android:id="@+id/registerActionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="DAFTAR"
+        android:textColor="@color/dark_red"/>
+
+</LinearLayout>

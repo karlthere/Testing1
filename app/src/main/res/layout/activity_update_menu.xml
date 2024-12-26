@@ -1,0 +1,88 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/picUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Menu"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textColor="#720036" />
+
+        <!-- Edit Text for Menu Title -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/imgnull" />
+
+        <EditText
+            android:id="@+id/inputUpdateTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Menu Title"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="8dp" />
+
+        <!-- Edit Text for Description -->
+        <EditText
+            android:id="@+id/inputUpdateDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="8dp" />
+
+        <!-- Edit Text for Fee -->
+        <EditText
+            android:id="@+id/inputUpdateFee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fee"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:padding="8dp" />
+
+        <!-- Spinner for Category -->
+        <Spinner
+            android:id="@+id/spinnerUpdateCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/category_array"
+            android:spinnerMode="dropdown"
+            android:minHeight="48dp"
+            android:padding="8dp" />
+
+        <!-- Switch for Availability -->
+        <Switch
+            android:id="@+id/switchUpdateAvailable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Available"
+            android:minHeight="48dp"
+            android:padding="8dp" />
+
+        <!-- Button to Update the Menu -->
+        <Button
+            android:id="@+id/buttonUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Menu" />
+
+    </LinearLayout>
+</ScrollView>
